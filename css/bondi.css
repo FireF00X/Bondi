@@ -1,0 +1,223 @@
+:root {
+    --dark: #19283f;
+    --light: #33d1cc;
+    --red: #ff3150;
+    --yellow: #ffc400;
+    --trans: #eff7fa;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainbtn {
+    font-weight: bold;
+    background-color: var(--red);
+    color: var(--yellow);
+}
+
+.mainbtn:hover {
+    color: var(--yellow);
+}
+
+.main-title::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--light);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* start nav */
+.navbar {
+    background-color: var(--dark);
+}
+
+.navbar .container .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: white;
+}
+
+.navbar .container .collapse ul li a {
+    color: white;
+    transition: .3s;
+}
+
+.navbar .container .collapse ul li a.active,
+.navbar .container .collapse ul li a:hover {
+    color: var(--light);
+}
+
+.navbar .container .search svg {
+    color: var(--light);
+
+}
+
+.navbar .container .search {
+    border-left: 1px solid var(--light);
+}
+
+/* end nav */
+/* start main */
+.landing {
+    background-color: var(--dark);
+    height: calc(100vh - 72px);
+    width: 100%;
+}
+
+/* end main */
+/* start featuers */
+.featuers .container .row .box .icons {
+    height: 200px;
+}
+
+.featuers .container .row .icons>:first-child {
+    color: var(--light);
+    position: absolute;
+    z-index: 1;
+    font-size: 3rem;
+    bottom: 0;
+}
+
+.featuers .container .row .icons>svg:nth-child(2) {
+    color: var(--trans);
+    font-size: 12rem;
+    bottom: 0;
+    z-index: 0;
+}
+
+.featuers .container .row h2 {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+/* end featuers */
+/* start desing */
+.design {
+    background-color: var(--trans);
+}
+
+.design .container .row>div>div::after {
+    content: "Application";
+    background-color: #2196f36b;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    top: .25rem;
+    font-weight: bold;
+    transform: translateX(calc(-100% - .25rem));
+    transition: .3s;
+}
+
+.design .container .row>div>div:hover:after {
+    transform: translateX(0%);
+}
+
+/* end desing */
+/* start team */
+.team {
+    background-color: var(--trans);
+}
+
+.team h2 {
+    color: var(--yellow);
+}
+
+.team .row .card .card-body::after {
+    content: "Luke Skywalker";
+    width: 100%;
+    height: 50px;
+    background-color: var(--light);
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    color: white;
+}
+
+/* end team */
+/* start project */
+.project {
+    background-color: var(--dark);
+}
+
+/* end project */
+/* end project */
+.subs {
+    background-color: var(--yellow);
+}
+
+.subs .container .row>div {
+    color: var(--dark);
+    font-weight: bold;
+    font-size: large;
+}
+
+.subs .container .row input {
+    border: 0;
+    outline: none;
+    padding: 10px;
+    color: white;
+}
+
+.subs .container .row>:nth-child(2) {
+    border-bottom: 2px solid white;
+}
+
+.subs .container .row button {
+    background-color: var(--dark);
+}
+
+/* end project */
+/* start footer */
+.footer {
+    background-color: var(--dark);
+}
+
+.footer .container .row .info>p:nth-child(3) span {
+    color: var(--light);
+    font-weight: bold;
+}
+
+.footer .container .row .info>span:last-child bdi {
+    color: var(--yellow);
+}
+
+.footer .container .row .contact ul li {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container .row .contact ul li:nth-child(1) {
+    background-color: #1877f2;
+}
+
+.footer .container .row .contact ul li:nth-child(2) {
+    background-color: #1da1f2;
+
+}
+
+.footer .container .row .contact ul li:nth-child(3) {
+    background-color: #0077b5;
+}
+
+.footer .container .row .contact ul li:nth-child(4) {
+    background-color: #ff0000;
+}
+
+/* end footer */
